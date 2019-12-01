@@ -4,7 +4,7 @@ import Device from './Device';
 function Item({displayContent}) {
     return (
         <div className="Item">
-            <Device type={"--laptop"} display={displayContent}/> 
+            <Device type={"--iphone"} display={displayContent}/> 
         </div>   
     );
 }

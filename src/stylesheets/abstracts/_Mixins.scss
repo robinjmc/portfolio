@@ -62,56 +62,55 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 
 @mixin deviceViewer($type) {
+    position: relative;
+    margin: auto;
+    border-radius: .6rem;
+    border-style: solid;
+    border-color: #eceaed;
+    border-width: 0;
+    background-color: rgba(255, 255, 255, 0);
+
+    -webkit-box-shadow: -3.7rem 3.7rem 15rem -6rem rgba(5, 5, 5, 0.52);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    -3.7rem 3.7rem 15rem -6rem rgba(5, 5, 5, 0.52); /* Firefox 3.5 - 3.6 */
+    box-shadow:         -3.7rem 3.7rem 15rem -6rem rgba(5, 5, 5, 0.52);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    
     @if $type == iphone {
-        position: relative;
+       /* position: relative;
         margin: auto;
         border: 1.6rem black solid;
         border-top-width: 6.0rem;
         border-bottom-width: 6.0rem;
-        border-radius: 3.6rem;
+        border-radius: 3.6rem;*/
 
-        width: 36.0rem;
+        width: 38.5rem;
         height: 64.0rem;
 
     }
 
     @if $type == tablet {
-        position: relative;
+        /*position: relative;
         margin: auto;
         border: 1.6rem black solid;
         border-top-width: 6.0rem;
         border-bottom-width: 6.0rem;
-        border-radius: 3.6rem;
+        border-radius: 3.6rem;*/
         
-        width: 76.8rem;
+        width: 77rem;
         height: 102.4rem;
     }
 
     @if $type == laptop {
-        // left: 50%;
-        position: relative;
-        margin: auto;
         width: 90vw;
         height: 90vh;
-        border-radius: .6rem;
-        border-style: solid;
-        border-color: #eceaed;
-        border-width: 0;
-        background-color: rgba(255, 255, 255, 0);
-        -webkit-transform-origin: 0 0;
-        transform-origin: 0 0;
-        -webkit-box-shadow: -3.7rem 3.7rem 15rem -6rem rgba(5, 5, 5, 0.52);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-        -moz-box-shadow:    -3.7rem 3.7rem 15rem -6rem rgba(5, 5, 5, 0.52); /* Firefox 3.5 - 3.6 */
-        box-shadow:         -3.7rem 3.7rem 15rem -6rem rgba(5, 5, 5, 0.52);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
     }
-
+/*
     &:before {
         content: '';
         display: block;
         position: absolute;
 
         @if $type == laptop {
-            /*width: 25.0rem;
+            width: 25.0rem;
             height: 3.0rem;
             bottom: -11.0rem;
             left: 50%;
@@ -120,7 +119,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
             background: #000000;
             border-bottom-left-radius: .5rem;
             border-bottom-right-radius: .5rem;
-            z-index: 1;*/
+            z-index: 1;
 
         } @else {
             width: 6.0rem;
@@ -129,18 +128,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
             left: 50%;
         }
     }
-
+*/ /*
     &:after {
         content: '';
         display: block;
         position: absolute;
         
         @if $type == laptop {
-            /*width: 160.0rem;
+           width: 160.0rem;
             height: 6.0rem;
             margin: 8.0rem 0 0 -11.0rem;
             background: black;
-            border-radius: .6rem;*/
+            border-radius: .6rem;
 
         } @else {
             width: 3.5rem;
@@ -152,31 +151,33 @@ ORDER: Base + typography > general layout + grid > page layout > components
             border-radius: 50%;
         }
 
-    } 
+    } */
 }
 
 
 @mixin deviceContent($type) {
+    width: 100%;
+    height: 100%;
+    border-radius: .6rem;
+    overflow: hidden;
+    border: none;
+
     @if $type == iphone {
-        width: 36.0rem;
-        height: 64.0rem;
+        //width: 36.0rem;
+        //height: 64.0rem;
         background: white;
 
     }
 
     @if $type == tablet {
-        width: 76.8rem;
-        height: 102.4rem;
+        // width: 76.8rem;
+        // height: 102.4rem;
         background: white;
-        margin: -.1rem;
     }
 
     @if $type == laptop {
-        width: 90vw;
-        height: 90vh;
+        // width: 90vw;
+        // height: 90vh;
 
-        border-radius:  .6rem ;
-        overflow: hidden;
-        border: none;
     }
 }
