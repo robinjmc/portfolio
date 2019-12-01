@@ -1,10 +1,14 @@
 .Item{
     padding: 5rem 0; 
     display: grid;
-    grid-gap: 3rem;
-    // grid-template-columns: repeat(2, 1fr);
     justify-content: center; 
     align-content: center; 
+    grid-template-columns: 1fr 40rem;
+    margin-bottom: 5rem;
 
+
+
+    @include respond(tab-port){
     grid-template-columns: repeat(auto-fit,  minmax(40rem, 1fr));
+    }
 }
