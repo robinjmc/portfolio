@@ -1,161 +1,150 @@
 .Device {
     box-sizing: content-box;
+    
     &__viewer {
-        //iphone
-        
+        &--iphone {
+            @include deviceViewer(iphone)
+        }
+
+        &--tablet {
+            @include deviceViewer(tablet)
+        }
+
+        &--laptop {
+            @include deviceViewer(laptop)
+        }
+        /*
         position: relative;
-        width: 36.0rem;
-        height: 64.0rem;
         margin: auto;
         border: 1.6rem black solid;
         border-top-width: 6.0rem;
         border-bottom-width: 6.0rem;
         border-radius: 3.6rem;
+
+        &--iphone{
+            width: 36.0rem;
+            height: 64.0rem;
+        }
         
+        &--tablet{
+            width: 76.8rem;
+            height: 102.4rem;
+        }
         
-        //tablet
-        /*position: relative;
-        width: 76.8rem;
-        height: 102.4rem;
-        margin: auto;
-        border: 1.6rem black solid;
-        border-top-width: 6.0rem;
-        border-bottom-width: 6.0rem;
-        border-radius: 3.6rem;*/
-        
-        //laptop
-        /*
-        -webkit-transform-origin: 0 0;
-        transform-origin: 0 0;
-        //13 inch
-        -webkit-transform: scale(.6) translate(-50%); 
-        transform: scale(.6) translate(-50%); 
-       //16 inch
-        -webkit-transform: scale(1) translate(-50%); 
-        transform: scale(1) translate(-50%); 
-       
-        left: 50%;
-        position: absolute;
-        width: 136.6rem;
-        height: 80.0rem;
-        border-radius: .6rem;
-        border-style: solid;
-        border-color: black;
-        border-width: 2.4rem 2.4rem 8.0rem;
-        background-color: black;
-        */
-        
-        
+        &--laptop{
+            left: 50%;
+            position: absolute;
+            width: 136.6rem;
+            height: 80.0rem;
+            border-radius: .6rem;
+            border-style: solid;
+            border-color: black;
+            border-width: 2.4rem 2.4rem 8.0rem;
+            background-color: black;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+
+            &--13 inch{
+                -webkit-transform: scale(.6) translate(-50%); 
+                transform: scale(.6) translate(-50%);
+            }
+            &--16 inch{
+                    -webkit-transform: scale(1) translate(-50%); 
+                    transform: scale(1) translate(-50%);
+            }
+        }
           
         &:before { 
-          //iphone
-          content: '';
-          display: block;
-          width: 6.0rem;
-          height: .5rem;
-          position: absolute;
-          top: -3.0rem;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background: #333;
-          border-radius: 1.0rem;
+            //iphone & tablet
+            content: '';
+            display: block;
+            width: 6.0rem;
+            height: .5rem;
+            position: absolute;
+            top: -3.0rem;
+            left: 50%;
           
-         
-          
-          //tablet
-          /*content: '';
-          display: block;
-          width: 6.0rem;
-          height: .5rem;
-          position: absolute;
-          top: -3.0rem;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background: #333;
-          border-radius: 1.0rem;*/
-          
-          //laptop
-          /*
-          content: '';
-          display: block;
-          position: absolute;
-          width: 25.0rem;
-          height: 3.0rem;
-          bottom: -11.0rem;
-          left: 50%;
-          -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-          background: #f1f1f1;
-          border-bottom-left-radius: .5rem;
-          border-bottom-right-radius: .5rem;
-          z-index: 1;
-          */
-          
-          
+          &--laptop {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 25.0rem;
+            height: 3.0rem;
+            bottom: -11.0rem;
+            left: 50%;
+            -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+            background: #f1f1f1;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            z-index: 1;
+          }
         }
 
         &:after{
-          //iphone
-          content: '';
-          display: block;
-          width: 3.5rem;
-          height: 3.5rem;
-          position: absolute;
-          left: 50%;
-          bottom: -6.5rem;
-          transform: translate(-50%, -50%);
-          background: #333;
-          border-radius: 50%;
+          //iphone & tablet
+            content: '';
+            display: block;
+            width: 3.5rem;
+            height: 3.5rem;
+            position: absolute;
+            left: 50%;
+            bottom: -6.5rem;
+            transform: translate(-50%, -50%);
+            background: #333;
+            border-radius: 50%;
           
-          
-          //tablet
-          /*content: '';
-          display: block;
-          width: 3.5rem;
-          height: 3.5rem;
-          position: absolute;
-          left: 50%;
-          bottom: -6.5rem;
-          transform: translate(-50%, -50%);
-          background: #333;
-          border-radius: 50%;*/
-          
-          //laptop
-          /*
-          content: '';
-          display: block;
-          position: absolute;
-          width: 160.0rem;
-          height: 6.0rem;
-          margin: 8.0rem 0 0 -11.0rem;
-          background: black;
-          border-radius: .6rem;
-          */
+          &--laptop{
+            content: '';
+            display: block;
+            position: absolute;
+            width: 160.0rem;
+            height: 6.0rem;
+            margin: 8.0rem 0 0 -11.0rem;
+            background: black;
+            border-radius: .6rem;
+          }
           
         }
-        
+        */
       }
     &__content { 
-          //iphone
-        width: 36.0rem;
-          height: 64.0rem;
-          background: white;
+        &--iphone {
+            @include deviceContent(iphone)
+        }
+
+        &--tablet {
+            @include deviceContent(tablet)
+        }
+
+        &--laptop{
+            @include deviceContent(laptop)
+        }
+        /*
+          &--iphone {
+            width: 36.0rem;
+            height: 64.0rem;
+            background: white;
+          }
         
           
-          //tablet
-          /*width: 76.8rem;
-          height: 102.4rem;
-          background: white;
-          margin: -.1rem;*/
+          &--tablet{
+            width: 76.8rem;
+            height: 102.4rem;
+            background: white;
+            margin: -.1rem;
+          }
           
-          //laptop
-          /*
-          width: 136.6rem;
-          height: 80.0rem;
-          overflow: hidden;
-          border: none;
-          */
+          &--laptop{
+            width: 136.6rem;
+            height: 80.0rem;
+            overflow: hidden;
+            border: none;
+
+        }
+*/
     }
+
       
     iframe {
         width: 100%;

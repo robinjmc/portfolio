@@ -1,14 +1,14 @@
 import React from 'react';
 
-function Device() {
+function Device({type, display}) {
     return (
-        <container class="Device">
-            <div class="Device__viewer">
-                <div class="Device__content">
-                    <iframe title="Fegbar Project" src="https://fegbar.herokuapp.com/whats-in-guv"/>
+        <div className="Device">
+            <div className={"Device__viewer"+type}>
+                <div className={"Device__content"+type}>
+                    <iframe title="Fegbar Project" src={display}/>
                 </div>
             </div>
-        </container>                                        
+        </div>                                        
     )
 }
 export default Device;
