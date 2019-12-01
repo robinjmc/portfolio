@@ -18,7 +18,7 @@ class Reads extends Component {
 
     return (
       <Fragment>
-        <div className="">
+        <div className="Reads">
             <ReactMarkdown source={post} />
         </div>
       </Fragment>
