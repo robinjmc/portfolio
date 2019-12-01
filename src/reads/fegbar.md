@@ -1,45 +1,9 @@
-# Fegbar Front End
+# Fegbar
+### No inspiration what to cook? Wanting to offset your carbon footprint and buy locally? Or just want to keep upto date with the seasons? 
+Fegbar is the site for you! Just log on and you can see what fruit and vegetables are currently in season at your local shops, fill up your basket and calculate that you’re getting all the nutrients you need. 
 
-fe-feg-bar deployed: http://fegbar.herokuapp.com
+Fegbar is a Full Stack development project completed within 2 weeks for the Northcoders project phase. As part of this project I had to create an original, achievable idea and pitch it to my tutors. It had to be a full stack development completed on my own. The backend SQL database serves up data via an API I wrote in Node.js where the  fruit and vegetables or ‘feg’ is fetched from. The API can serve up ‘feg’ based on month and type and the user has a basket of ‘feg’ that they can add to and remove from.
 
-Fegbar is a seasonal fruit & vegetable guide and nutrition calculator. In season fruit & vegetables, or 'Feg', are displayed indiviually or in a grid format for users to explore. Feg that are coming in to season soon are displayed in a grid format at the bottom of the homepage. Via the API in season Feg can be added to a basket it, where, each Feg's nutritional information is calculated from data fetched from an external API.
+After finish building the project I presented my research and the mobile first website as part of the graduation day to others on the course and potential employers.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-Node.js >=v8.9.3 
-download Node by following the installtion steps on their website (https://nodejs.org/en/)
-
-### Installing
-
-# Npm install
-`cd` into the project folder and in the command line run `$npm install` or `$npm i`
-
-# Nutritionix API
-Create a Nutritionix account (https://developer.nutritionix.com/signup) to access your own API Keys. In the project folder create a .env file with the following code:
-
-```
-REACT_APP_NUTRITION_ID = Nutrition_ID
-REACT_APP_NUTRITION_KEY = Nutrition_Key
-REACT_APP_NUTRITION_USER = Nutrition_User
-```
-Where Nutrition_ID, Nutrition_Key & Nutrition_User are your own id, key and usernames.
-
-# Npm start
-To start the development env running locally `cd` in to the project folder and run in the command line `$npm start`
-
-## Deployment
-#Create the Heroku app
-In the command line type `heroku create $APP_NAME --buildpack` https://github.com/mars/create-react-app-buildpack.git
-Replace '$APP_NAME' with the name for your unique app.
-
-#Commit and Deploy
-Stage the code to be commited (`$git add .`)
-Commit the code with a relevant message (`$git -m 'Inital Deployment'`)
-Push the code to the Heroku master branch (`$git push heroku master`)
-
-#Vist the public site Url in your browser
-In the command line run  `$heroku open`
+I have left the code base untouched (apart from security updates and fixes) to demonstrate what I was able to achieve within the 2 week period
