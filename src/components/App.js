@@ -1,10 +1,12 @@
 import React from 'react';
-import logo from '../logo.svg';
+import Content from './Content';
+// import logo from '../logo.svg';
 // import './App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <Content />
+    /*<div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,7 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>*/
   );
 }
 
