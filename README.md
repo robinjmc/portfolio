@@ -1,6 +1,6 @@
 #   Robin Cunningham
 ##  Foundation Developer
-                                                                                                      ### thinkmoney
+### thinkmoney
 **august 2018 - present**
 
 Fullstack development role in an agile work enivorment delievering continous deployment/releases centered around kanban methodlogy. Javascript, HTML, CSS and SQL based tech stack as well as thrid party integrations into the Outsystems development envrioment. Since delievering a new ThinkMoney Onboarding journey in collabertion with a contracted offsite Outsystems team, the role has focused on data based product improvements to increase the speed of customer boarding from weeks to minutes. 
