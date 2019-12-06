@@ -1,5 +1,7 @@
 #   Robin Cunningham
 
+Software Developer specialising in interface, performance & installation solutions. Goldsmiths, UoL and Northcoders alumni, seeking new challenges within software development. High achiever with a passion for technology, art & the complex intersections between them. 
+
 ##  Foundation Developer
 **thinkmoney** *august 2018 - present* 
  
