@@ -14,11 +14,11 @@ import nexter from '../reads/nexter.md';
 function Content() {
     return (
         <div className="Content">
-            <Item displayContent={"https://nexter-rc.herokuapp.com"} readme={nexter}/>    
-            <Item displayContent={"https://trillo-rc.herokuapp.com"} readme={trillo}/>    
             <Item displayContent={"https://shielded-brushlands-10812.herokuapp.com"} readme={tetris}/>  
             <Item displayContent={"https://lyallhakaraia.co.uk"} readme={lyallhakaraia}/>  
-            <Item displayContent={"https://natours-rc.herokuapp.com"} readme={natours}/>    
+            <Item displayContent={"https://natours-rc.herokuapp.com"} readme={natours}/>   
+            <Item displayContent={"https://nexter-rc.herokuapp.com"} readme={nexter}/>    
+            <Item displayContent={"https://trillo-rc.herokuapp.com"} readme={trillo}/>     
             <Item displayContent={"https://omnifood-rc.herokuapp.com"} readme={omnifoods}/> 
             <Item displayContent={"https://fegbar.herokuapp.com/whats-in-guv"} readme={fegbar}/>      
             <Item displayContent={"https://rc-ncnews.herokuapp.com"} readme={ncnews}/>      
