@@ -8,10 +8,12 @@ import ncnews from '../reads/nc-news.md';
 import omnifoods from '../reads/omnifoods.md';
 import tetris from '../reads/tetris.md';
 import lyallhakaraia from '../reads/lyallhakaraia.md';
+import trillo from '../reads/trillo.md';
 
 function Content() {
     return (
         <div className="Content">
+            <Item displayContent={"https://trillo-rc.herokuapp.com"} readme={trillo}/>    
             <Item displayContent={"https://shielded-brushlands-10812.herokuapp.com"} readme={tetris}/>  
             <Item displayContent={"https://lyallhakaraia.co.uk"} readme={lyallhakaraia}/>  
             <Item displayContent={"https://natours-rc.herokuapp.com"} readme={natours}/>    
