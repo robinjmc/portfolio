@@ -1,0 +1,31 @@
+.Pagination {
+    &__nav {
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    &__page {
+       margin: 0 1rem;
+       cursor: pointer;
+       background-color: transparent;
+       display: inline-block;
+       border-radius: 50%;
+       border: #000 solid 1px;
+       width: 1.5rem;
+       height: 1.5rem;
+    }
+
+    &--active {
+         background-color: #000;
+    }
+
+    &__arrow {
+        margin: 0 1rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+
+}
