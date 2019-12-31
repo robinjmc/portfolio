@@ -37,7 +37,7 @@ class Pagination extends Component {
   }
 
   componentDidMount() {
-    this.gotoPage(0);
+    this.gotoPage(Math.floor(Math.random() * this.totalRecords));
   }
 
   gotoPage = page => {
