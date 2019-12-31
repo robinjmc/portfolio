@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Device from './Device';
 import Reads from './Reads';
 
-function Item({displayContent, readme}) {
+const Item = ({content}) => {
+    const {site: displayContent = "", about: readme = ""} = content || {};
     return (
         <div className="Item">
             <Device type={"--iphone"} display={displayContent}/>
@@ -10,4 +12,16 @@ function Item({displayContent, readme}) {
         </div>   
     );
 }
-export default Item;
+
+// function areEqual(prevProps, nextProps) {
+//     console.log(prevProps, nextProps);
+//     return true;
+// }
+
+Item.propTypes = {
+    content: PropTypes.shape({
+        site: PropTypes.string.isRequired,
+        about: PropTypes.string.isRequired
+    }).isRequired
+};
+export default React.memo(Item);

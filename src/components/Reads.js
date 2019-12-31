@@ -12,6 +12,13 @@ class Reads extends Component {
       .then(post => this.setState((state) => ({ ...state, post })))
       .catch((err) => console.error(err));
   }
+  
+  componentDidUpdate() {
+    fetch(this.props.readme)
+      .then(res => res.text())
+      .then(post => this.setState((state) => ({ ...state, post })))
+      .catch((err) => console.error(err));
+  }
 
   render() {
     const { post } = this.state;
